@@ -2,9 +2,9 @@
 
 module.exports = {
   name: 'ember-cli-remark-templates',
-  isDevelopingAddon() {
-    return true;
-  },
+  // isDevelopingAddon() {
+  //   return true;
+  // },
   setupPreprocessorRegistry(type, registry) {
     if(type === 'parent') {
       let Compiler = require('./lib/compiler');
