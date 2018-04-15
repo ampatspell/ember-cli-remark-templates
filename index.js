@@ -2,12 +2,13 @@
 
 module.exports = {
   name: 'ember-cli-remark-templates',
+  isDevelopingAddon() {
+    return true;
+  },
   setupPreprocessorRegistry(type, registry) {
-    let Compiler = require('./lib/compiler');
-    registry.add('template', {
-      name: 'ember-cli-remark-templates',
-      ext: [ 'md', 'markdown' ],
-      toTree: tree => new Compiler(tree)
-    });
+    if(type === 'parent') {
+      let Compiler = require('./lib/compiler');
+      registry.add('template', new Compiler());
+    }
   }
 };
