@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-remark-templates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Let's you use markdown to write Ember.js templates.",
   "keywords": [
     "ember-addon",
