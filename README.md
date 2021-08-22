@@ -2,7 +2,7 @@
 
 ![](screenshot.png)
 
-Let's you use markdown to write Ember.js templates.
+Lets you use markdown to write Ember.js templates.
 
 ## Install
 
